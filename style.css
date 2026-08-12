@@ -2009,29 +2009,13 @@ footer {
     }
 
     /* Projects: one card per row on mobile */
-    .projects-grid {
+    .project-grid {
         grid-template-columns: 1fr;
+        gap: 32px;
     }
 
     .project-card {
         width: 100%;
-    }
-
-    /* Navbar: smaller on mobile */
-    .navbar {
-        padding: 20px 24px;
-    }
-
-    .logo {
-        font-size: 14px;
-    }
-
-    .navbar nav {
-        gap: 20px;
-    }
-
-    .navbar nav a {
-        font-size: 14px;
     }
 
 }
