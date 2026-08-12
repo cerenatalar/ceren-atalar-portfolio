@@ -2041,3 +2041,23 @@ footer {
     }
 
 }
+
+/* =========================================
+   MOBILE RESEARCH ENTRIES
+   ========================================= */
+
+@media (max-width: 700px) {
+
+    .research-entry {
+        display: block !important;
+    }
+
+    .research-entry-header,
+    .research-entry-content {
+        width: 100% !important;
+        max-width: none !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+}
