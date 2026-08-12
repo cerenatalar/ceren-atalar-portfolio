@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Truss Structural Design & Analysis — Ceren Atalar</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+            CEREN ATALAR
+        </a>
+
+        <nav>
+            <a href="index.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="research.html">Research</a>
+        </nav>
+
+    </header>
+
+
+    <!-- PROJECT PAGE -->
+    <main class="project-page">
+
+
+        <!-- BACK LINK -->
+        <a href="projects.html" class="project-back">
+            ← Back to Projects
+        </a>
+
+
+        <!-- PROJECT HEADER -->
+        <section class="project-hero">
+
+            <p class="project-category">
+                STRUCTURAL ENGINEERING · MATLAB · COMPUTATIONAL MODELING
+            </p>
+
+            <h1>
+                Truss Structural Design & Analysis
+            </h1>
+
+            <p class="project-intro">
+                A team-based structural engineering project focused on
+                optimizing a planar truss for load-carrying capacity while
+                satisfying geometric, material, and cost constraints.
+            </p>
+
+            <div class="project-meta">
+
+                <span>
+                    Engineering Mechanics
+                </span>
+
+                <span>
+                    MATLAB
+                </span>
+
+                <span>
+                    Group Project
+                </span>
+
+            </div>
+
+        </section>
+
+
+        <!-- HERO IMAGE -->
+        <section class="project-media">
+
+            <!-- Replace with your actual final truss image -->
+            <img
+                src="images/truss/truss-main.png"
+                alt="Final cambered truss design"
+            >
+
+            <p class="project-caption">
+                Final cambered truss design developed through iterative
+                computational analysis.
+            </p>
+
+        </section>
+
+
+        <!-- OVERVIEW -->
+        <section class="project-section">
+
+            <div class="project-section-label">
+                OVERVIEW
+            </div>
+
+            <div class="project-section-content">
+
+                <p>
+                    The goal of the project was to design a planar truss that
+                    maximized load-carrying capacity while remaining within
+                    specified geometric, material, and cost constraints.
+                </p>
+
+                <p>
+                    Because buckling was the dominant failure mode, our team
+                    focused on distributing compressive forces effectively,
+                    shortening critical compression members, and placing
+                    longer members primarily in tension.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- DESIGN PROCESS -->
+        <section class="project-section">
+
+            <div class="project-section-label">
+                DESIGN PROCESS
+            </div>
+
+            <div class="project-section-content">
+
+                <p>
+                    The final design evolved from two preliminary truss
+                    geometries. After comparing their force distributions and
+                    structural limitations, we selected one configuration and
+                    refined it rather than starting from an entirely new
+                    geometry.
+                </p>
+
+                <p>
+                    We iteratively adjusted joint coordinates and member
+                    lengths, running the MATLAB analysis after each
+                    modification to evaluate internal forces, buckling
+                    behavior, and total material usage.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ANALYSIS -->
+        <section class="project-section">
+
+            <div class="project-section-label">
+                ANALYSIS
+            </div>
+
+            <div class="project-section-content">
+
+                <p>
+                    The MATLAB model constructed the truss from its joint
+                    coordinates and connection matrix, assembled the global
+                    equilibrium system, and solved for member forces and
+                    support reactions under the applied load.
+                </p>
+
+                <p>
+                    Compression members were evaluated using the class
+                    buckling relationship from experimental lab data. The
+                    model identified the critical compression member and used
+                    its buckling capacity to predict the theoretical failure
+                    load.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- RESULTS -->
+        <section class="project-section">
+
+            <div class="project-section-label">
+                RESULTS
+            </div>
+
+            <div class="project-section-content">
+
+                <p>
+                    The final design had a theoretical failure load of
+                    <strong>34.51 ± 1.58 oz</strong>, with member m8 identified
+                    as the critical member. Its predicted buckling strength
+                    was 20.77 ± 1.58 oz.
+                </p>
+
+                <p>
+                    The design had a calculated cost of $163.55 and a
+                    load-to-cost ratio of 0.211 oz/$.
+                </p>
+
+                <p>
+                    Because the project required consideration of human-safety
+                    scenarios, our team selected a conservative factor of
+                    safety of <strong>3.0</strong>, resulting in an allowable
+                    load of approximately <strong>11.50 oz</strong>.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ENGINEERING JUDGMENT -->
+        <section class="project-section">
+
+            <div class="project-section-label">
+                ENGINEERING JUDGMENT
+            </div>
+
+            <div class="project-section-content">
+
+                <p>
+                    An important part of the project was evaluating the
+                    limitations of computational analysis. Our team discussed
+                    the risk of relying on software without verifying whether
+                    the model and boundary conditions accurately represented
+                    the physical structure.
+                </p>
+
+                <p>
+                    We incorporated this perspective into our design process
+                    by emphasizing hand calculations, physical reasoning, and
+                    conservative safety assumptions alongside computational
+                    results.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- PROJECT GALLERY -->
+        <section class="project-gallery">
+
+
+            <figure class="project-figure-single">
+
+                <img
+                    src="images/truss/truss-output.png"
+                    alt="Truss design and analysis"
+                >
+
+                <figcaption>
+                    Final truss design and MATLAB analysis output showing member forces and buckling behavior
+                </figcaption>
+
+            </figure>
+
+
+            
+
+        </section>
+
+
+        <!-- SKILLS -->
+        <section class="project-section project-skills-section">
+
+            <div class="project-section-label">
+                SKILLS & TOOLS
+            </div>
+
+            <div class="project-skills">
+
+                <span>MATLAB</span>
+                <span>Structural Analysis</span>
+                <span>Computational Modeling</span>
+                <span>Buckling Analysis</span>
+                <span>Engineering Mechanics</span>
+                <span>Iterative Design</span>
+                <span>Load Analysis</span>
+                <span>Engineering Ethics</span>
+
+            </div>
+
+        </section>
+
+
+        <!-- TEAM ACKNOWLEDGEMENT -->
+        <section class="project-team">
+
+            <p>
+                This was a collaborative project completed with Ascanio
+                Andreis De Gregorio and Abdulhaleef Sotunbo. I am grateful
+                to my teammates for their contributions to the design,
+                analysis, discussion, and development of our final truss.
+            </p>
+
+        </section>
+
+
+        <!-- PROJECT REPORT -->
+        <section class="project-report">
+
+            <div>
+
+                <p class="project-section-label">
+                    DOCUMENTATION
+                </p>
+
+                <h2>
+                    Final Design Report
+                </h2>
+
+                <p>
+                    For the complete design process, MATLAB analysis,
+                    member-level results, and engineering ethics discussion,
+                    see the full final design report.
+                </p>
+
+            </div>
+
+            <!-- Replace with your actual PDF link -->
+            <a
+                href="documents/truss-design.pdf"
+                target="_blank"
+                class="project-report-link"
+            >
+                View final report ↗
+            </a>
+
+        </section>
+
+
+        <!-- BACK TO PROJECTS -->
+        <div class="project-bottom-link">
+
+            <a href="projects.html">
+                ← Back to Projects
+            </a>
+
+        </div>
+
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            © 2026 Ceren Atalar
+        </p>
+
+        <div class="footer-links">
+
+            <a href="mailto:YOUR_EMAIL@example.com">
+                Email ↗
+            </a>
+
+            <a
+                href="https://www.linkedin.com/in/ceren-atalar/"
+                target="_blank"
+            >
+                LinkedIn ↗
+            </a>
+
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Room Temperature Monitor — Ceren Atalar</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+            CEREN ATALAR
+        </a>
+
+        <nav>
+            <a href="index.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="research.html">Research</a>
+        </nav>
+
+    </header>
+
+
+    <!-- PROJECT PAGE -->
+    <main class="project-page">
+
+
+        <!-- BACK LINK -->
+        <a href="projects.html" class="project-back">
+            ← Back to Projects
+        </a>
+
+
+        <!-- PROJECT HEADER -->
+        <section class="project-hero">
+
+            <p class="project-category">
+                EMBEDDED SYSTEMS · SENSOR DESIGN · PROTOTYPING
+            </p>
+
+            <h1>
+                Room Temperature Monitor
+            </h1>
+
+            <p class="project-intro">
+                A compact Arduino-based temperature monitoring system that
+                displays real-time readings and provides visual and auditory
+                alerts when the temperature moves outside a defined range.
+            </p>
+
+            <div class="project-meta">
+
+                <span>
+                    Hands On Engineering
+                </span>
+
+                <span>
+                    Arduino
+                </span>
+
+                <span>
+                    Individual Project
+                </span>
+
+            </div>
+
+        </section>
+
+
+        <!-- HERO IMAGE -->
+        <section class="project-media">
+
+            <!-- Replace with your actual project image -->
+            <img
+                src="images/temp-sensor/temp-main.png"
+                alt="Room temperature monitor prototype"
+            >
+
+            <p class="project-caption">
+                Final Room Temperature Monitor prototype.
+            </p>
+
+        </section>
+
+
+        <!-- OVERVIEW -->
+        <section class="project-section">
+
+            <div class="project-section-label">
+                OVERVIEW
+            </div>
+
+            <div class="project-section-content">
+
+                <p>
+                    The Room Temperature Monitor was designed to continuously
+                    measure and display ambient temperature while providing
+                    an alert when the reading falls outside a user-defined
+                    range.
+                </p>
+
+                <p>
+                    The system combines a TMP36 analog temperature sensor,
+                    Arduino Uno, I2C LCD display, LEDs, and a buzzer within a
+                    portable enclosure.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- SYSTEM DESIGN -->
+        <section class="project-section">
+
+            <div class="project-section-label">
+                SYSTEM DESIGN
+            </div>
+
+            <div class="project-section-content">
+
+                <p>
+                    The Arduino functions as the central processing unit,
+                    receiving the analog voltage output from the TMP36,
+                    converting the measurement into temperature, and
+                    controlling the display and alert components.
+                </p>
+
+                <p>
+                    Temperature is displayed in both Celsius and Fahrenheit.
+                    When the reading moves outside the defined 80–90°F range,
+                    the system activates an LED and buzzer to provide
+                    immediate feedback.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ENCLOSURE & PROTOTYPING -->
+        <section class="project-section">
+
+            <div class="project-section-label">
+                ENCLOSURE & PROTOTYPING
+            </div>
+
+            <div class="project-section-content">
+
+                <p>
+                    I designed the physical organization of the components
+                    within the enclosure, including a custom 3D-printed
+                    battery holder and an acrylic mounting plate for the
+                    Arduino.
+                </p>
+
+                <p>
+                    Different wiring techniques were selected based on the
+                    requirements of each connection. I used soldering and
+                    heat-shrink tubing for smaller components such as the
+                    temperature sensor, LEDs, buzzer, and power connections,
+                    while spade connectors and jumper wires were used where
+                    they provided easier assembly and maintenance.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- PROGRAMMING -->
+        <section class="project-section">
+
+            <div class="project-section-label">
+                PROGRAMMING
+            </div>
+
+            <div class="project-section-content">
+
+                <p>
+                    The Arduino program reads the TMP36's analog voltage,
+                    converts it into Celsius and Fahrenheit, updates the LCD
+                    display, and continuously checks whether the temperature
+                    is within the defined operating range.
+                </p>
+
+                <p>
+                    The system also controls the LED and buzzer response,
+                    allowing the device to function as both a monitoring and
+                    alert system.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- PERFORMANCE -->
+        <section class="project-section">
+
+            <div class="project-section-label">
+                PERFORMANCE
+            </div>
+
+            <div class="project-section-content">
+
+                <p>
+                    The completed prototype successfully met the project's
+                    functional and safety requirements and demonstrated
+                    continuous temperature monitoring with customizable
+                    alert behavior.
+                </p>
+
+                <p>
+                    The system drew approximately 77 mA and was estimated to
+                    operate for approximately 6.5 hours from its internal 9V
+                    battery. The design also supported external USB-B or 5V
+                    power for stationary operation.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- LIMITATIONS -->
+        <section class="project-section">
+
+            <div class="project-section-label">
+                DESIGN CONSIDERATIONS
+            </div>
+
+            <div class="project-section-content">
+
+                <p>
+                    The prototype prioritized functionality, flexibility, and
+                    ease of construction rather than the compactness and
+                    precision of a commercial thermometer.
+                </p>
+
+                <p>
+                    The TMP36 has an approximately ±2°C temperature error,
+                    and the project did not include formal reliability testing.
+                    These limitations were considered when evaluating the
+                    appropriate applications for the final design.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- PROJECT GALLERY -->
+        <section class="project-gallery">
+
+            <div class="project-gallery-grid">
+
+                <figure>
+
+                    <img
+                        src="images/temp-sensor/temp-CAD1.png"
+                        alt="CAD design for temperature monitor enclosure"
+                    >
+                    <figcaption>
+                        
+                    </figcaption>
+                    <img
+                        src="images/temp-sensor/temp-CAD2.png"
+                        alt="CAD design for temperature monitor enclosure"
+                    >
+                    
+
+                    <figcaption>
+                        Enclosure and component layout CAD design
+                    </figcaption>
+
+                </figure>
+
+
+                <figure>
+
+                    <img
+                        src="images/temp-sensor/temp-circuit.png"
+                        alt="Temperature monitor circuit"
+                    >
+
+                    <figcaption>
+                        Sensor, display, and alert circuitry
+                    </figcaption>
+
+                </figure>
+
+            </div>
+
+        </section>
+
+
+        <!-- SKILLS -->
+        <section class="project-section project-skills-section">
+
+            <div class="project-section-label">
+                SKILLS & TOOLS
+            </div>
+
+            <div class="project-skills">
+
+                <span>Arduino</span>
+                <span>TMP36 Sensor</span>
+                <span>Embedded Systems</span>
+                <span>CAD</span>
+                <span>3D Printing</span>
+                <span>Electronics</span>
+                <span>Soldering</span>
+                <span>Prototyping</span>
+
+            </div>
+
+        </section>
+
+
+        <!-- PROJECT REPORT -->
+        <section class="project-report">
+
+            <div>
+
+                <p class="project-section-label">
+                    DOCUMENTATION
+                </p>
+
+                <h2>
+                    Final Project Report
+                </h2>
+
+                <p>
+                    For the complete design process, component specifications,
+                    wiring methods, Arduino implementation, and evaluation,
+                    see the full project report.
+                </p>
+
+            </div>
+
+            <!-- Replace with your actual PDF link -->
+            <a
+                href="documents/room-temp-monitor.pdf"
+                target="_blank"
+                class="project-report-link"
+            >
+                View final report ↗
+            </a>
+
+        </section>
+
+
+        <!-- BACK TO PROJECTS -->
+        <div class="project-bottom-link">
+
+            <a href="projects.html">
+                ← Back to Projects
+            </a>
+
+        </div>
+
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            © 2026 Ceren Atalar
+        </p>
+
+        <div class="footer-links">
+
+            <a href="mailto:ceren.atalar11@gmail.com">
+                Email ↗
+            </a>
+
+            <a
+                href="https://www.linkedin.com/in/ceren-atalar/"
+                target="_blank"
+            >
+                LinkedIn ↗
+            </a>
+
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>

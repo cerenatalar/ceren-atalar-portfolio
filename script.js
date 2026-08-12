@@ -1,0 +1,1 @@
+console.log("Ceren Atalar portfolio loaded.");
