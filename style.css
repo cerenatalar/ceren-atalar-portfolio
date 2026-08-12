@@ -2043,21 +2043,29 @@ footer {
 }
 
 /* =========================================
-   MOBILE RESEARCH ENTRIES
+   MOBILE RESEARCH — ALIGN CONTENT
    ========================================= */
 
 @media (max-width: 700px) {
 
     .research-entry {
-        display: block !important;
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        width: 100% !important;
     }
 
     .research-entry-header,
     .research-entry-content {
         width: 100% !important;
         max-width: none !important;
+
         margin-left: 0 !important;
         margin-right: 0 !important;
+
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+
+        box-sizing: border-box !important;
     }
 
 }
