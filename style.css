@@ -516,7 +516,7 @@ footer {
         grid-template-columns: 1fr;
     }
 
-    footer {
+    .footer {
         padding: 25px 7%;
         flex-direction: column;
         align-items: flex-start;
@@ -558,8 +558,9 @@ footer {
     .project-card h2 {
         font-size: 25px;
     }
-        .research-page {
-        width: 86%;
+    
+    .research-page {
+        width: 100%;
         padding-bottom: 80px;
     }
 
