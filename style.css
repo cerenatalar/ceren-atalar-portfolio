@@ -1986,3 +1986,52 @@ footer {
     display: block;
     border-radius: 8px;
 }
+
+/* =========================================
+   MOBILE RESPONSIVE DESIGN
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    /* Research entries: stack title and content */
+    .research-entry {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .research-entry-header,
+    .research-entry-content {
+        width: 100%;
+    }
+
+    .research-entry-content {
+        margin-top: 0;
+    }
+
+    /* Projects: one card per row on mobile */
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card {
+        width: 100%;
+    }
+
+    /* Navbar: smaller on mobile */
+    .navbar {
+        padding: 20px 24px;
+    }
+
+    .logo {
+        font-size: 14px;
+    }
+
+    .navbar nav {
+        gap: 20px;
+    }
+
+    .navbar nav a {
+        font-size: 14px;
+    }
+
+}
