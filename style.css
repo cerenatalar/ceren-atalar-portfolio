@@ -2046,7 +2046,7 @@ footer {
    MOBILE RESEARCH — ALIGN CONTENT
    ========================================= */
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
 
     .research-entry {
         display: grid !important;
