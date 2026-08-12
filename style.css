@@ -2027,7 +2027,7 @@ footer {
 
 @media (max-width: 700px) {
 
-    .projects-grid {
+    .project-grid {
         display: flex !important;
         flex-direction: column !important;
         gap: 24px !important;
